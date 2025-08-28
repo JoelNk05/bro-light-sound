@@ -72,7 +72,7 @@
     AOS.init({
         duration: 700,
         once: true,       // Animation nur einmal, nicht bei jedem Scroll
-        offset: 150       // Abstand bis Animation startet
+        offset: 150
     });
 </script>
 </body>
