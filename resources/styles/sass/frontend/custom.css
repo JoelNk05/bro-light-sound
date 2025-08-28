@@ -1,5 +1,4 @@
 /* Immobilien Highlights */
-
 body {
     overflow-x: hidden;
 }
@@ -156,7 +155,6 @@ body {
         align-items: flex-end;
     }
 }
-
 
 .py-custom{
     padding-top:30px;
