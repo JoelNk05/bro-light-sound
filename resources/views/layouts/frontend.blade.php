@@ -24,20 +24,18 @@
 {{-- Header / Navigation --}}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#"><img style="width: 150px" src="/images/logo.png"></a>
+        <a class="navbar-brand fw-bold" href="{{route('frontend.home')}}"><img style="width: 150px" src="/images/logo.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
-            0509
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto me-3">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('frontend.home')}}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Aktuelles</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Interessenten</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Bewerten</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Referenzen</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('frontend.home') }}#contact">Kontakt</a></li>
-
             </ul>
             <a href="#" class="btn btn-info text-white">Immobilie anbieten</a>
         </div>
@@ -59,7 +57,7 @@
         </div>
         <div class="align-content-center">
             <a href="#" class="text-white mx-2">Impressum</a>
-            <a href="#" class="text-white mx-2">Datenschutz</a>
+            <a href="{{route("frontend.privacy")}}" class="text-white mx-2">Datenschutz</a>
             <a href="#" class="text-white mx-2">AGB</a>
         </div>
     </div>

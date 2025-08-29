@@ -1,10 +1,8 @@
 @extends('layouts.frontend')
 
 @section('content')
-
-    {{-- Hero Section --}}
     <header class="hero-banner position-relative"
-            style="height: 50vh;
+            style="height: 100vh;
                background: url('{{ asset('images/733d5d2b-e39a-4538-bc5f-8691365b83ad.png') }}') center center/cover no-repeat;">
         <div class="overlay position-absolute top-0 start-0 w-100 h-100"
              style="background: rgba(0,0,0,0.6);"></div>
@@ -30,8 +28,6 @@
             </form>
         </div>
     </header>
-
-    {{-- Immobilien Highlights --}}
     <section class="container py-5">
         <h2 class="text-center mb-5">Immobilien-Highlights</h2>
         <div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="row g-4">
@@ -67,8 +63,6 @@
             </div>
         </div>
     </section>
-
-    {{-- Über uns --}}
     <section  data-aos="fade-right" class="container py-5">
         <h2 class="text-center mb-5">Über uns</h2>
         <div class="row text-center g-4">
@@ -76,26 +70,25 @@
                 <div class="p-4 bg-dark rounded shadow h-100">
                     <i class="bi bi-shield-check display-4 text-info mb-3"></i>
                     <h5 class="fw-bold">Vertrauen</h5>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="p-4 bg-dark rounded shadow h-100">
                     <i class="bi bi-house-gear display-4 text-info mb-3"></i>
                     <h5 class="fw-bold">Erfahrung</h5>
-                    <p class="text-muted">Viele Jahre Expertise im Immobilienmarkt.</p>
+                    <p class="">Viele Jahre Expertise im Immobilienmarkt.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="p-4 bg-dark rounded shadow h-100">
                     <i class="bi bi-heart-fill display-4 text-info mb-3"></i>
                     <h5 class="fw-bold">Kundennähe</h5>
-                    <p class="text-muted">Individuelle Beratung und persönliche Betreuung.</p>
+                    <p class="">Individuelle Beratung und persönliche Betreuung.</p>
                 </div>
             </div>
         </div>
     </section>
-
     <section>
         <h2 class="text-center mb-5">Kontakt</h2>
         <div class="container-fluid py-custom pt-0" data-aos="fade-left" id="contact">
