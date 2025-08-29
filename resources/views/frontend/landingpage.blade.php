@@ -101,36 +101,13 @@
                                 @method('POST')
                             </fieldset>
                             <div class="win-form row">
-                                <div class="col-12 col-lg-6 col-xl-6justify-content-between">
-                                    <h2 class="h3 fw-bold mb-4 mb-lg- pb-lg-3">Sie möchten Kontakt zu mir aufnehmen? Füllen Sie einfach das Formular aus und ich wende mich schnellstmöglich an Sie!</h2>
-                                    <ul class="list-unstyled mb-4">
-                                        <li class="mb-3 d-flex gap-3">
-                                            <div class="rounded-circle border-color  border d-flex align-items-center justify-content-center flex-shrink-0" style="width: 35px; height: 35px;">1
-                                            </div>
-                                            <span class="">@lang("form_text_1")</span>
-                                        </li>
-                                        <li class="mb-3 d-flex gap-3">
-                                            <div class="rounded-circle border-color border d-flex align-items-center justify-content-center flex-shrink-0" style="width: 35px; height: 35px;">2
-                                            </div>
-                                            <span class="">@lang("form_text_2")</span>
-                                        </li>
-                                        <li class="mb-3 d-flex gap-3">
-                                            <div class="rounded-circle border-color border d-flex align-items-center justify-content-center flex-shrink-0" style="width: 35px; height: 35px;">3
-                                            </div>
-                                            <span class="">@lang("form_text_3")</span>
-                                        </li>
-                                        <li class="mb-3 d-flex gap-3">
-                                            <div class="rounded-circle border-color border d-flex align-items-center justify-content-center flex-shrink-0" style="width: 35px; height: 35px;">4
-                                            </div>
-                                            <span class="">@lang("form_text_4")</span>
-                                        </li>
-                                        <li class="mb-3 d-flex gap-3">
-                                            <div class="rounded-circle border-color border d-flex align-items-center justify-content-center flex-shrink-0" style="width: 35px; height: 35px;">5
-                                            </div>
-                                            <span class="">@lang("form_text_5")</span>
-                                        </li>
-                                    </ul>
-                                    <p>Es gelten die allgemeinen <a style="font-size: 16px" href="{{ route('frontend.termsandconditions') }}" target="_blank">Teilnahmebedingungen</a> zum Mix & Match Sparkassen Gewinnspiel.</p>
+                                <div class="col-12 col-lg-6 col-xl-6 justify-content-between">
+                                    <h2 class="h3 fw-bold mb-2 mb-lg- pb-lg-3">Sie möchten Kontakt zu mir aufnehmen?</h2>
+                                <p>Ich freue mich sehr, dass Sie den Weg zu mir gefunden haben! Egal, ob Sie eine Immobilie verkaufen, vermieten oder suchen – oder einfach allgemeine Informationen benötigen – ich stehe Ihnen gerne zur Verfügung.
+<br><br>
+                                    Füllen Sie einfach das untenstehende Formular aus, und ich werde mich so schnell wie möglich mit Ihnen in Verbindung setzen. Ihre Anfrage wird selbstverständlich vertraulich behandelt, und ich werde alles daran setzen, Ihnen bei Ihrem Anliegen bestmöglich zu helfen.
+<br><br>
+                                    Lassen Sie uns gemeinsam Ihre Immobilienziele verwirklichen – ich freue mich auf Ihre Nachricht!</p>
                                 </div>
 
                                 <div class="col-12 col-lg-6">
@@ -170,7 +147,7 @@
                                             <label for="request">Ihr Anliegen</label>
                                         </div>
                                     </div>
-                                    <div class="accordion mt-3" id="checkboxAccordion">
+                                    <div class="mt-3">
                                         <div class="form-check mt-2">
                                             <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
                                             <label class="form-check-label fw-light" for="privacy">
