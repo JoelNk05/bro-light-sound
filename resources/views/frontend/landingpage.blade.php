@@ -1,168 +1,107 @@
 @extends('layouts.frontend')
 
 @section('content')
-    <header class="hero-banner position-relative"
-            style="height: 100vh;
-               background: url('{{ asset('images/733d5d2b-e39a-4538-bc5f-8691365b83ad.png') }}') center center/cover no-repeat;">
-        <div class="overlay position-absolute top-0 start-0 w-100 h-100"
-             style="background: rgba(0,0,0,0.6);"></div>
+    <header class="hero d-flex" >
+        <div class="container hero-content" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Logo -->
+                    <img src="/images/logo.svg" alt="BRO Light & Sound Logo" class="hero-logo img-fluid">
 
-        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="fade-right">
-            <h1 class="display-4 fw-bold">Ihr Zuhause. <br>Unsere Leidenschaft.</h1>
-            <p class="lead text-info">Exklusive Immobilienangebote in Deutschland</p>
+                    <!-- Claim -->
+                    <h2>Unvergessliche Events mit<br>Licht, Sound &amp; DJ-Service</h2>
 
-            <form class="row g-2 justify-content-center mt-4">
-                <div class="col-md-4">
-                    <x-shared.forms.floating-input-field name="location" id="location" label="Ort" type="text" :errors="$errors" required/>
+                    <!-- CTA Button -->
+                    <a href="#kontakt" class="btn btn-hero">JETZT ANFRAGEN</a>
                 </div>
-                <div class="col-md-4">
-                    <x-shared.forms.floating-input-field name="category" id="category" label="Objektart" type="text" :errors="$errors" required/>
-                </div>
-                <div class="col-md-4">
-                    <x-shared.forms.floating-select-field name="request" id="request" label="Objektart" :errors="$errors" required/>
-                    <option></option>
-                </div>
-                <div class="col-md-auto">
-                    <button type="submit" class="btn btn-info text-white btn-pill mt-3 fw-medium">Suchen<i class="fw-medium fa fa-arrow-right ms-1"></i></button>
-                </div>
-            </form>
+            </div>
         </div>
     </header>
-    <section class="container py-5">
-        <h2 class="text-center mb-5">Immobilien-Highlights</h2>
-        <div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="row g-4">
-            <div class="col-md-4">
-                <div class="card bg-dark text-white h-100 shadow-lg border-0">
-                    <img src="/images/733d5d2b-e39a-4538-bc5f-8691365b83ad.png" class="card-img-top" alt="Haus 1">
-                    <div class="card-body">
-                        <h3 class="text-info">450.000 €</h3>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <a href="#" class="btn btn-info text-white">Details ansehen</a>
-                    </div>
+
+    <section data-aos="fade-right" class="py-5">
+        <div class="container">
+            <h3 class="section-title">Über uns</h3>
+            <div class="underline"></div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>Wir bringen Licht, Sound und Stimmung auf dein Event – egal ob Hochzeit, Firmenfeier oder Festival. Mit moderner Technik, kreativen Showkonzepten und dem Gespür für den richtigen Moment sorgen wir dafür, dass jede Veranstaltung zu einem unvergesslichen Erlebnis wird. Von der dezenten Hintergrundmusik beim Empfang bis zur vollen Party-Atmosphäre auf der Tanzfläche: Wir passen uns flexibel an deine Wünsche an und setzen dein Event perfekt in Szene.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80" class="img-fluid rounded" alt="DJ">
                 </div>
             </div>
-            <div  data-aos="fade-up"  data-aos-anchor-placement="top-bottom" class="col-md-4">
-                <div class="card bg-dark text-white h-100 shadow-lg border-0">
-                    <img src="/images/733d5d2b-e39a-4538-bc5f-8691365b83ad.png" class="card-img-top" alt="Haus 2">
-                    <div class="card-body">
-                        <h3 class="text-info">720.000 €</h3>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <a href="#" class="btn btn-info text-white">Details ansehen</a>
-                    </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-dark">
+        <div class="container" data-aos="fade-left">
+            <h3 class="section-title">Unsere Leistungen</h3>
+            <div class="underline"></div>
+            <div class="row text-center">
+                <div class="col-md-4 feature">
+                    <i class="fas fa-headphones mb-3" style="font-size: 30px; color: #00bfda"></i>
+                    <h4>DJ & Musik</h4>
+                    <p></p>
+                </div>
+                <div class="col-md-4 feature">
+                    <i class="fa-solid fa-volume-up mb-3" style="font-size: 30px; color: #00bfda"></i>
+                    <h4>Soundtechnik</h4>
+                    <p></p>
+                </div>
+                <div class="col-md-4 feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 20l4-12 4 12 4-12 4 12"/></svg>
+                    <h4>Lichttechnik</h4>
+                    <p></p>
                 </div>
             </div>
-            <div  data-aos="fade-up" class="col-md-4">
-                <div class="card bg-dark text-white h-100 shadow-lg border-0">
-                    <img src="/images/733d5d2b-e39a-4538-bc5f-8691365b83ad.png" class="card-img-top" alt="Haus 3">
-                    <div class="card-body">
-                        <h3 class="text-info">1.300.000 €</h3>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <a href="#" class="btn btn-info text-white">Details ansehen</a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container" data-aos="fade-right">
+            <h3 class="section-title">Galerie</h3>
+            <div class="underline"></div>
+            <div class="row g-3">
+                <div class="col-md-4"><img src="https://images.unsplash.com/photo-1518972559570-7cc1309f3229?q=80" class="img-fluid" alt="Event"></div>
+                <div class="col-md-4"><img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80" class="img-fluid" alt="Event"></div>
+                <div class="col-md-4"><img src="https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?q=80" class="img-fluid" alt="Event"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-dark" id="kontakt">
+        <div class="container" data-aos="fade-left">
+            <h3 class="section-title">Kontakt</h3>
+            <div class="underline"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">E-Mail</label>
+                            <input type="email" class="form-control" placeholder="deine@mail.de">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Nachricht</label>
+                            <textarea class="form-control" rows="4" placeholder="Sag uns kurz, worum es geht …"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent">Anfrage senden</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4">
+                        <h4 class="mb-3">Kontaktieren Sie uns gerne:</h4>
+                        <p class="d-flex align-content-center"><i class="fa-brands fa-whatsapp me-3" style="font-size: 30px"></i> +49 170 1234567</p>
+                        <p class="d-flex align-content-center"><i class="fa-regular fa-envelope me-3" style="font-size: 30px"></i> E-Mail</p>
+                        {{--                        <p class="text-muted">Wir antworten in der Regel innerhalb von 24 Stunden.</p>--}}
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section  data-aos="fade-right" class="container py-5">
-        <h2 class="text-center mb-5">Über uns</h2>
-        <div class="row text-center g-4">
-            <div class="col-md-4">
-                <div class="p-4 bg-dark rounded shadow h-100">
-                    <i class="bi bi-shield-check display-4 text-info mb-3"></i>
-                    <h5 class="fw-bold">Vertrauen</h5>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-4 bg-dark rounded shadow h-100">
-                    <i class="bi bi-house-gear display-4 text-info mb-3"></i>
-                    <h5 class="fw-bold">Erfahrung</h5>
-                    <p class="">Viele Jahre Expertise im Immobilienmarkt.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-4 bg-dark rounded shadow h-100">
-                    <i class="bi bi-heart-fill display-4 text-info mb-3"></i>
-                    <h5 class="fw-bold">Kundennähe</h5>
-                    <p class="">Individuelle Beratung und persönliche Betreuung.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2 class="text-center mb-5">Kontakt</h2>
-        <div class="container-fluid py-custom pt-0" data-aos="fade-left" id="contact">
-            <div class="container text-black bg-white py-custom px-md-5" style="border-radius: 5px;">
-                <div class="row">
-                    <div class="col-12">
-                        <form action="#contact" method="POST" enctype="multipart/form-data">
-                            <fieldset>
-                                @csrf
-                                @method('POST')
-                            </fieldset>
-                            <div class="win-form row">
-                                <div class="col-12 col-lg-6 col-xl-6 justify-content-between">
-                                    <h2 class="h3 fw-bold mb-2 mb-lg- pb-lg-3">Sie möchten Kontakt zu mir aufnehmen?</h2>
-                                <p>Ich freue mich sehr, dass Sie den Weg zu mir gefunden haben! Egal, ob Sie eine Immobilie verkaufen, vermieten oder suchen – oder einfach allgemeine Informationen benötigen – ich stehe Ihnen gerne zur Verfügung.
-<br><br>
-                                    Füllen Sie einfach das untenstehende Formular aus, und ich werde mich so schnell wie möglich mit Ihnen in Verbindung setzen. Ihre Anfrage wird selbstverständlich vertraulich behandelt, und ich werde alles daran setzen, Ihnen bei Ihrem Anliegen bestmöglich zu helfen.
-<br><br>
-                                    Lassen Sie uns gemeinsam Ihre Immobilienziele verwirklichen – ich freue mich auf Ihre Nachricht!</p>
-                                </div>
 
-                                <div class="col-12 col-lg-6">
-                                    <!-- Show all Laravel Valiation Error -->
-                                    @if ($errors->any())
-                                        <div class="alert alert-danger">
-                                            <strong>Bitte korrigieren Sie die folgenden Fehler:</strong>
-                                            <ul>
-                                                @foreach ($errors->all() as $error)
-                                                    <li>{{ $error }}</li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    @endif
-                                    <div>
-                                        <x-shared.forms.floating-input-field name="first_name" id="first_name" label="Vorname" type="text" :errors="$errors" required/>
-                                        <x-shared.forms.floating-input-field name="last_name" id="last_name" label="Nachname" type="text" :errors="$errors" required/>
-                                        <x-shared.forms.floating-input-field name="email" id="email" label="E-Mail" type="text" :errors="$errors" required/>
-                                        <x-shared.forms.floating-input-field name="phone" id="phone" label="Telefon" type="text" :errors="$errors" required/>
-                                        <div class="form-group form-floating">
-                                            <select name="request" id="request" {{ @$multiple == 'true' ? 'multiple' : null }} data-live-search="true" data-selected-text-format="count > 2" class="form-select select-customized">
-                                                <option value="" disabled selected>{{ $placeholder ?? 'Bitte wählen' }}</option>
-                                                <option value="1">{{ $placeholder ?? 'Fragen zum angebotenen Objekt' }}</option>
-                                                <option value="2">{{ $placeholder ?? 'Ich wünsche eine Beratung' }}</option>
-                                                <option value="3">{{ $placeholder ?? 'Allgemeine Fragen' }}</option>
-                                                <option value="4">{{ $placeholder ?? 'Ich suche eine Kauf Immobilie' }}</option>
-                                                <option value="5">{{ $placeholder ?? 'Ich suche eine Miet Immobilie' }}</option>
-
-                                                {{--        @foreach($primaryModel as $model)--}}
-                                                {{--            @if($model instanceof UnitEnum)--}}
-                                                {{--                <option value="{{ $model->value }}" {{ @$multiple == 'true' ? (in_array($model->value, @old($name) ?? []) ? 'selected' : null) : (@old($name) == $model->value ? 'selected' : null) }}>{{ $model->label() }}</option>--}}
-                                                {{--            @else--}}
-                                                {{--                <option value="{{ $model->id }}" {{ @$multiple == 'true' ? (in_array($model->id, @old($name) ?? []) ? 'selected' : null) : (@old($name) == $model->id ? 'selected' : null) }}>{{ $model->$fieldname }}</option>--}}
-                                                {{--            @endif--}}
-                                                {{--        @endforeach--}}
-                                            </select>
-                                            <label for="request">Ihr Anliegen</label>
-                                        </div>
-                                    </div>
-                                    <div class="mt-3">
-                                        <div class="form-check mt-2">
-                                            <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
-                                            <label class="form-check-label fw-light" for="privacy">
-                                                Ich willige ein, dass diese Website meine übermittelten Informationen speichert, sodass meine Anfrage beantwortet werden kann und akzeptiere hiermit die <a href="{{ route('frontend.privacy') }}" target="_blank"> Datenschutzbestimmungen</a>.
-                                            </label>
-                                        </div>
-                                        <button type="submit" class="btn btn-info text-white btn-pill mt-3 fw-medium border-white border-1" style="border:1px white solid!important;">Teilnehmen<i class="fw-medium fa fa-arrow-right ms-1"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 @endsection
 
